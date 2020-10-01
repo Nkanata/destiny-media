@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/faq_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/TextNormalTheme"
+            android:layout_marginRight="@dimen/marginMax"
+            android:layout_marginEnd="@dimen/marginMax"
+            android:layout_marginLeft="@dimen/marginMax"
+            android:layout_marginStart="@dimen/marginMax"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/faq_pulldown"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:padding="@dimen/marginMax"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/faq_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextDescriptionTheme"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/marginMedium"
+        android:layout_marginRight="@dimen/marginMax"
+        android:layout_marginEnd="@dimen/marginMax"
+        android:layout_marginLeft="@dimen/marginMax"
+        android:layout_marginStart="@dimen/marginMax"/>
+
+
+</LinearLayout>

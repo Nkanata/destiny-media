@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:background="@color/colorWhite"
+    tools:context=".EnquiryActivity">
+
+<com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/enquiry_appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/enquiry_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorWhite"/>
+
+</com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/enquiries_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/editor"
+        android:visibility="gone"
+        android:layout_below="@id/enquiry_appbar"/>
+
+    <LinearLayout
+        android:id="@+id/empty_enquiry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_above="@id/editor"
+        android:layout_below="@id/enquiry_appbar"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/enquiry"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No enquiries yet"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="@dimen/marginMax"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/marginMedium"
+            android:text="Get started by asking a question below." />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/editor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:layout_alignParentBottom="true"
+        android:elevation="4dp" tools:targetApi="21"
+        android:background="@color/colorWhite">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeWidth="1dp"
+            android:layout_margin="@dimen/paddingMax"
+            app:contentPadding="@dimen/paddingMedium"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="32dp"
+            app:strokeColor="@color/cardStrokeColor">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/enquiry_message"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ask a question"
+                    android:layout_marginRight="@dimen/marginMedium"
+                    android:layout_marginEnd="@dimen/marginMedium"
+                    android:scrollbars="vertical"
+                    android:maxLines="3"
+                    android:paddingStart="@dimen/paddingMedium"
+                    android:paddingEnd="@dimen/paddingMedium"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="1"/>
+
+
+                <ImageView
+                    android:id="@+id/enquiry_sendImage"
+                    android:layout_width="30dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_send_black_24dp"
+                    android:layout_height="30dp"/>
+
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

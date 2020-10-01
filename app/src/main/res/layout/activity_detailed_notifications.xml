@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".DetailedNotificationsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/detailed_notifications_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="top"
+        android:layout_alignParentTop="true"
+        android:elevation="@dimen/toolbar_elevation" tools:targetApi="21"
+        android:background="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/detailed_notification_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/marginMax"
+        android:layout_above="@id/bottom_bar"
+        android:layout_below="@id/detailed_notifications_toolbar"
+        style="@style/TextNormalTheme"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:elevation="@dimen/toolbar_elevation" tools:targetApi="21"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardElevation="0dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/marginMedium"
+            android:layout_marginRight="@dimen/marginMedium"
+            android:layout_marginStart="@dimen/marginMedium"
+            android:layout_marginLeft="@dimen/marginMedium"
+            app:cardCornerRadius="@dimen/cardCornerRadius">
+
+            <TextView
+                android:id="@+id/detailed_notifications_copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingTop="@dimen/paddingMedium"
+                android:paddingBottom="@dimen/paddingMedium"
+                android:layout_gravity="center"
+                style="@style/TextNormalTheme"
+                android:drawableTop="@drawable/ic_content_copy_black_24dp"
+                android:text="Copy"
+                android:background="?selectableItemBackground"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardElevation="0dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/marginMedium"
+            android:layout_marginRight="@dimen/marginMedium"
+            android:layout_marginStart="@dimen/marginMedium"
+            android:layout_marginLeft="@dimen/marginMedium"
+            app:cardCornerRadius="@dimen/cardCornerRadius">
+
+        <TextView
+            android:id="@+id/detailed_notifications_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingTop="@dimen/paddingMedium"
+            android:paddingBottom="@dimen/paddingMedium"
+            android:drawableTop="@drawable/ic_share_black_24dp"
+            style="@style/TextNormalTheme"
+            android:text="Share"
+            android:background="?selectableItemBackground"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

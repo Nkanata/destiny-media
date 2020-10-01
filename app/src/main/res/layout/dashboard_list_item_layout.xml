@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/cardStrokeColor"
+    app:cardElevation="0dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/dashboard_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cardImageSize"/>
+
+            <TextView
+                android:id="@+id/dashboard_title"
+                android:layout_width="match_parent"
+                android:paddingStart="@dimen/paddingMax"
+                android:paddingEnd="@dimen/paddingMax"
+                android:paddingRight="@dimen/paddingMax"
+                android:paddingLeft="@dimen/paddingMax"
+                android:layout_marginTop="@dimen/marginMedium"
+                style="@style/TextTitleTheme"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/dashboard_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/paddingMax"
+                android:paddingEnd="@dimen/paddingMax"
+                android:paddingRight="@dimen/paddingMax"
+                android:paddingLeft="@dimen/paddingMax"
+                android:layout_marginTop="@dimen/marginMedium"
+                style="@style/TextDescriptionTheme" />
+
+            <TextView
+                android:id="@+id/dashboard_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_arrow_forward_black_24dp"
+                android:drawableStart="@drawable/ic_arrow_forward_black_24dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?selectableItemBackground"
+                style="@style/TextControlActiveTheme"
+                android:padding="@dimen/paddingMax"
+                android:layout_marginTop="@dimen/marginMedium"
+                android:drawablePadding="@dimen/paddingMax"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

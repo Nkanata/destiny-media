@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:statusBarColor" tools:targetApi="21">@color/colorWhite</item>
+        <item name="android:navigationBarColor" tools:targetApi="21">@color/colorWhite</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27" >true</item>
+
+    </style>
+
+
+    <!-- Theme based for text -->
+    <style name="TextNormalTheme">
+    <item name="android:textSize">@dimen/textNormalSize</item>
+    <item name="android:textColor">@color/colorBlack</item>
+</style>
+
+    <style name="TextControlActiveTheme">
+    <item name="android:textSize">15sp</item>
+    <item name="android:textColor">@color/colorPrimary</item>
+</style>
+
+    <style name="TextMessageMineTheme">
+        <item name="android:textSize">@dimen/textNormalSize</item>
+        <item name="android:textColor">@color/colorTextWhite</item>
+    </style>
+
+    <style name="TextMessageSenderTheme">
+        <item name="android:textSize">@dimen/textNormalSize</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="TextDescriptionTheme">
+        <item name="android:textSize">@dimen/textDescriptionSize</item>
+        <item name="android:textColor">@color/colorTextDescription</item>
+    </style>
+
+    <style name="TextTitleTheme">
+        <item name="android:textSize">@dimen/textTitleSize</item>
+        <item name="android:textColor">@color/colorTextTitle</item>
+    </style>
+
+    <style name="AuthenticationTheme" parent="AppTheme">
+        <item name="android:statusBarColor" tools:targetApi="21">@color/colorAccent</item>
+        <item name="android:navigationBarColor" tools:targetApi="21"  >@color/colorWhite</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog">
+        <item name="android:statusBarColor" tools:targetApi="21">@color/colorWhite</item>
+        <item name="android:navigationBarColor" tools:targetApi="21"  >@color/colorWhite</item>
+    </style>
+
+    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_dialog_shape</item>
+    </style>
+
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+
+
+
+</resources>

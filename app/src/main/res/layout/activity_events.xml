@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".EventsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/events_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorWhite"
+        android:layout_gravity="top"
+        android:elevation="@dimen/toolbar_elevation" tools:targetApi="21"/>
+
+    <ProgressBar
+        android:id="@+id/events_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/progressHeight"
+        android:background="@color/colorWhite"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/events_recyclerView"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/events_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_cloud_off_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check your Internet connection"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="@dimen/marginMax"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/marginMedium"
+            android:text="You need an Internet connection to fetch events from Server." />
+
+
+    </LinearLayout>
+
+</LinearLayout>

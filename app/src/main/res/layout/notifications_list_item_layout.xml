@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/notification_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/paddingMax"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/notification_image"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginStart="@dimen/marginMax"
+            android:layout_marginLeft="@dimen/marginMax"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/notification_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    style="@style/TextTitleTheme"
+                    android:layout_gravity="start">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/notification_timestamp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    style="@style/TextDescriptionTheme"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="end"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/notification_description"
+                android:layout_width="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                style="@style/TextDescriptionTheme"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

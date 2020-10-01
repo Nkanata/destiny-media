@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Destiny Connections Media Application</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_phone">Phone Number</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_national_ID">National ID</string>
+
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_up">Sign Up</string>
+
+
+    <string name="welcome_message_sign_up">Create your Destiny Account</string>
+    <string name="welcome_message_sign_up_description">Carefully, fill all details.</string>
+    <string name="welcome_message_sign_in">Welcome back,</string>
+    <string name="welcome_message_sign_in_description">Sign in to your Destiny Account.</string>
+    <string name="welcome_message_dashboard_fragment">Hi user, to get started click on a dashboard item action.</string>
+    <string name="welcome_message_dashboard_fragment_description">You have 6 new items.</string>
+
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    !-- String related to modules -->
+    <string name="services_module">Services</string>
+    <string name="services_module_description">Browse, view, book or apply for our core services including training and industrial attachment.</string>
+    <string name="services_module_action">Browse services</string>
+    <string name="advertisement_module">Advertisement</string>
+    <string name="advertisement_module_description">Create or import a custom advertisement and we will help you advertise through our rich media sources.</string>
+    <string name="advertisement_module_action">Start advertising</string>
+    <string name="events_module">Events</string>
+    <string name="events_module_description">View and book for events that have been advertised through our media sources.</string>
+    <string name="events_module_action">View events</string>
+    <string name="feedback_module">Help &amp; feedback</string>
+    <string name="feedback_module_description">Get help or send your feedback, and get answers to your questions right away.</string>
+    <string name="feedback_module_action">Send feedback</string>
+    <string name="enquiry_module">Enquiries</string>
+    <string name="enquiry_module_description">Ask questions and get advice on Destiny features and operations.</string>
+    <string name="enquiry_module_action">Send enquiry</string>
+    <string name="contact_module">Contact Us</string>
+    <string name="contact_module_description">Contact Destiny Connections Media via email, phone or event book for an appointment to visit the offices.</string>
+    <string name="contact_module_action">Contact</string>
+
+    <!-- strings related to services activity -->
+    <string name="service_training">Training &amp; Attachment</string>
+    <string name="service_training_description">Request for industrial attachment and training services from Destiny.</string>
+    <string name="service_training_action">Request</string>
+    <string name="service_redirection">Service Redirection</string>
+    <string name="service_redirection_description">Need to be connected to other external services? Let us know what you need, we will be glad to help.</string>
+    <string name="service_redirection_action">Redirect</string>
+
+    <!-- strings related to contact activity -->
+    <string name="contact_visit">Visit Us</string>
+    <string name="contact_visit_description">We are situated next to Kenya Methodist University along Meru Maua road. Meru, Kenya.</string>
+    <string name="contact_visit_action">Visiting Appointment</string>
+    <string name="contact_call">Call Us</string>
+    <string name="contact_call_description">Reach us directly through the following lines: +254724156703 or +254790775100</string>
+    <string name="contact_call_action">Call</string>
+    <string name="contact_Email">Send Email</string>
+    <string name="contact_email_description">Write us an email via Contact@destinyfm.co.ke</string>
+    <string name="contact_email_action">Send mail</string>
+
+    <!--Strings related to Destiny contact information -->
+    <string name="phone">+254724156703</string>
+    <string name="alternative_phone">+254790775100</string>
+    <string name="email_address">contact@destinyfm.co.ke</string>
+
+
+    <!-- Strings related to main menu -->
+    <string name="navigation_view_website">Visit website</string>
+    <string name="navigation_account">Account</string>
+
+    <!-- Strings related to account activity -->
+    <string name="account_and_settings">Account &amp; Settings</string>
+
+    <!-- String related to FAQs -->
+    <string name="faq_receipt">Can one get a receipt after making a booking ?</string>
+    <string name="faq_receipt_description">No. The transaction is recorded in our databases all you have to do is present the transaction ID and it will be processed.</string>
+    <string name="faq_user_ID">Can i recover my user ID once i forget or lose it ?</string>
+    <string name="faq_user_ID_description">Yes it is possible, just send an email with your details and we will recover it for you.</string>
+
+
+    <!--Strings related to enquiries activity-->
+    <string name="empty_enquiry">No enquiries yet</string>
+    <string name="empty_enquiry_description">Get started by asking a question below.</string>
+    <string name="enquiry_hint">Ask something</string>
+    <string name="clear_enquiries">Clear Screen</string>
+</resources>

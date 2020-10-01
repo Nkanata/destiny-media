@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_view_webpage"
+        android:title="@string/navigation_view_website"
+        android:icon="@drawable/ic_launch_black_24dp"/>
+
+
+    <item
+        android:icon="@drawable/ic_account_circle_black"
+        android:id="@+id/navigation_account"
+        android:title="@string/navigation_account"
+        app:showAsAction="always"/>
+
+
+
+</menu>

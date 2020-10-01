@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ServicesActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/services_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="top"
+        android:background="@color/colorWhite"
+        android:elevation="@dimen/toolbar_elevation"
+        tools:targetApi="21"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/services_recyclerView"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
