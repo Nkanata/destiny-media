@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/comment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#eeeeee"
+        tools:context=".Drive">
+
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text=" Busia Border Drive Overview"
+        android:textSize="30dp"
+        android:textColor="#5F0505"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="16dp">
+
+        <ImageView
+        android:id="@+id/custom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+        app:srcCompat="@drawable/seven" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1F1E1E"
+                    android:textSize="22dp"
+                    android:text="GENERAL ADVICE"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This crossing is busiest when the intertown and shuttle buses are passing, typically 9:30-11:00 and 15:30-16:30. It is possible to pass through in as little as 15minutes but 30minutes is typical, up to an hour when busier."
+                    android:textColor="#1F1E1E"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="The following process go either direction."
+        android:textSize="20dp"
+        android:textColor="#1F1E1E"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VEHICLE PERMITS"
+        android:layout_marginTop="30dp"
+        android:textSize="17dp"
+        android:textColor="#0C0C0C"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Surrender your logbook on the way out of the cars home country and receive a temporary export permit which is valid for 3months and is legally the same as your logbook"
+        android:textSize="17dp"
+        android:textColor="#1F1E1E"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="2. On arrival in the other country you will receive a temporary importation permit valid for up to 3 months"
+        android:textSize="17dp"
+        android:textColor="#1F1E1E"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VEHICLE INSURANCE "
+        android:layout_marginTop="30dp"
+        android:textSize="17dp"
+        android:textColor="#0A0A0A"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3rd party vehicles insurance is required for both countries ,and your current insurance may not be valid as you cross the border"
+        android:textSize="17dp"
+        android:textColor="#1F1E1E"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+
+        </ScrollView>
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:elevation="2dp"
+        android:hint="leave a comment"
+        android:inputType="textShortMessage"
+        android:padding="16dp"
+        tools:targetApi="21" />
+
+
+</RelativeLayout>
